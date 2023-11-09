@@ -30,8 +30,6 @@ Connect GND pin to evive’s GND pin.
 Connect OUT to any gpio and configure that pin as EXTI mode 
 
 ### Interrupts
-
-
 Interrupts are asynchronous (i.e. can happen anytime) events that disrupt the normal flow of your program. This allows the microcontroller to focus on a key task and attend to these events (e.g. pressing a button) as they come without needing to wait for them.
 
 With interrupt, we do not need to continuously check the state of the digital input pin. When an interrupt occurs (a change is detected), the processor stops the execution of the main program and a function is called upon known as ISR or the Interrupt Service Routine. The processor then temporarily works on a different task (ISR) and then gets back to the main program after the handling routine has ended.
@@ -41,7 +39,7 @@ The STM32 ARM microcontroller interrupts are generated in the following manner:
 
 The system runs the ISR and then goes back to the main program. The NVIC and EXTI are configured. The Interrupt Service Routine (ISR) also known as the interrupt service routine handler is defined to enable the external interrupts.
 
- Interrupt Lines (EXTI0-EXTI15)
+Interrupt Lines (EXTI0-EXTI15)
 The STM32 ARM microcontroller features 23 event sources which are divided into two sections. The first section corresponds t external pins on each port which are P0-P15. The second section corresponds to RTC, ethernet, USB interrupts. Therefore, in the first section, we have 16 lines corresponding to line0 till line15. All of these map to a pin number.
 ![image](https://github.com/vasanthkumarch/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/36288975/1110746f-6be2-4d12-9a34-66004e4b307b)
 
@@ -59,7 +57,6 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 
 4.select the program name 
 ![image](https://user-images.githubusercontent.com/36288975/226189316-09832a30-4d1a-4d4f-b8ad-2dc28f137711.png)
-
 
 5. corresponding ioc file will be generated automatically 
 ![image](https://user-images.githubusercontent.com/36288975/226189378-3abbdee2-0df6-470f-a3cd-79c74e3d3ad8.png)
@@ -97,7 +94,6 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 16. flash the bin or hex file as shown below by switching the switch to flash mode 
 
 ![image](https://user-images.githubusercontent.com/36288975/227599656-dc4a635f-b5f1-44c8-84c5-ee0a592fa184.png)
-
 
 17. check for execution of the output by switching the board to run mode 
 18. click on the serial port utility 
@@ -222,7 +218,6 @@ void assert_failed(uint8_t *file, uint32_t line)
 }
 #endif
 ```
-
 ## Output screen shots of serial port utility   :
 
 ![image](exp4_iot-1.png)
