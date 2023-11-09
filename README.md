@@ -219,12 +219,9 @@ void assert_failed(uint8_t *file, uint32_t line)
 #endif
 ```
 ## Output screen shots of serial port utility   :
-
 ![image](exp4_iot-1.png)
 ![image](exp4_iot-2.png)
-
 ## Circuit board :
-
 ![image](exp4_iot-3.png)
 
  ## Result :
