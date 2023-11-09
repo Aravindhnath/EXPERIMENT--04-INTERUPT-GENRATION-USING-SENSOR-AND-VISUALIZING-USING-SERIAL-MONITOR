@@ -229,12 +229,11 @@ void assert_failed(uint8_t *file, uint32_t line)
 ## Output screen shots of serial port utility   :
 
 ![image](exp4_iot-1.png)
-
 ![image](exp4_iot-2.png)
 
 ## Circuit board :
 
 ![image](exp4_iot-3.png)
- 
-## Result :
+
+ ## Result :
 Interfacing a  IR SENSOR and interrupt is generated using external interrupt mode , visualized on serial port 
